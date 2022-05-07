@@ -1,0 +1,66 @@
+{
+  "name": "سورس والي | WALE SOURCE",
+  "description": "تنصيب سورس والي الاصلي معرف قناتنا @ioi_t",
+  "logo": "https://telegra.ph/file/5fda4f37ae7c9f7ac449c.jpg",
+  "keywords": [    "plugin",    "modular",    "productivity"  ],
+  "repository": "https://github.com/KZR-WALI/RETIO",
+  "website": "#TODO",
+  "success_url": "#TODO",
+  "env": {
+    "ALIVE_NAME": {
+      "description": "ضع اسمك الذي في تليجرام",
+      "value": ""
+    },
+    "APP_ID": {
+      "description": "ضع الايبي ايدي هنا",
+      "value": ""
+    },
+    "API_HASH": {
+      "description": "ضع الايبي هاش هنا",
+      "value": ""
+    },
+    "STRING_SESSION": {
+      "description": "ضع كود تيرمكس هنا",
+      "value": ""
+    },
+    "TG_BOT_USERNAME": {
+      "description": " ضع معرف البوت هنا",
+      "value": ""
+    },
+    "TG_BOT_TOKEN": {
+      "description": "ضع توكن البوت هنا",
+      "value": ""
+    },
+    "TZ": {
+      "description": " الوقت",
+      "value": "Asia/Baghdad",
+      "required": false
+    },
+    "UPSTREAM_REPO": {
+      "description": "لاتـغيره! ",
+      "value": "https://github.com/KZR-WALI/ERTIO",
+      "required": false
+    }
+  },
+  "addons": [{
+    "plan": "heroku-postgresql",
+    "options": {
+      "version": "12"
+    }
+  }],
+  "buildpacks": [{
+    "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest"
+  },{
+    "url":"https://github.com/heroku/heroku-buildpack-google-chrome"
+  },{
+    "url":"https://github.com/heroku/heroku-buildpack-chromedriver"
+  },{
+    "url": "https://github.com/opendoor-labs/heroku-buildpack-p7zip"
+  },{
+    "url": "https://github.com/heroku/heroku-buildpack-apt.git"
+  },{
+    "url": "https://github.com/chrismytton/heroku-buildpack-jq"
+  },{
+    "url": "heroku/python"
+  }]
+}
